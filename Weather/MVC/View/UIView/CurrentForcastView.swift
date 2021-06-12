@@ -12,6 +12,8 @@ class CurrentForcastView: UIView {
     override func layoutSubviews() {
         super.layoutSubviews()
         self.backgroundColor = .blue
+        self.layer.cornerRadius = 16
+
     }
 
     
