@@ -17,6 +17,8 @@
 		7F1225F226741C430078CF3D /* WeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1225F126741C430078CF3D /* WeatherUITests.swift */; };
 		7F12261526745CFC0078CF3D /* CurrentForcastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F12261426745CFC0078CF3D /* CurrentForcastView.swift */; };
 		7F12262826745FEC0078CF3D /* WeekForcastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F12262726745FEC0078CF3D /* WeekForcastTableViewCell.swift */; };
+		7F12262E26746DE60078CF3D /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F12262D26746DE60078CF3D /* AppError.swift */; };
+		7F12263426746E150078CF3D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F12263326746E150078CF3D /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		7F1225F326741C430078CF3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F12261426745CFC0078CF3D /* CurrentForcastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentForcastView.swift; sourceTree = "<group>"; };
 		7F12262726745FEC0078CF3D /* WeekForcastTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekForcastTableViewCell.swift; sourceTree = "<group>"; };
+		7F12262D26746DE60078CF3D /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		7F12263326746E150078CF3D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +182,8 @@
 		7F12261326745CC30078CF3D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7F12263226746DF50078CF3D /* NetworkManager */,
+				7F12262C26746DAE0078CF3D /* App Error */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -196,6 +202,22 @@
 				7F12262726745FEC0078CF3D /* WeekForcastTableViewCell.swift */,
 			);
 			path = UITableCell;
+			sourceTree = "<group>";
+		};
+		7F12262C26746DAE0078CF3D /* App Error */ = {
+			isa = PBXGroup;
+			children = (
+				7F12262D26746DE60078CF3D /* AppError.swift */,
+			);
+			path = "App Error";
+			sourceTree = "<group>";
+		};
+		7F12263226746DF50078CF3D /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				7F12263326746E150078CF3D /* NetworkManager.swift */,
+			);
+			name = NetworkManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,6 +352,8 @@
 			files = (
 				7F1225D426741C3F0078CF3D /* ForcastViewController.swift in Sources */,
 				7F1225D026741C3F0078CF3D /* AppDelegate.swift in Sources */,
+				7F12262E26746DE60078CF3D /* AppError.swift in Sources */,
+				7F12263426746E150078CF3D /* NetworkManager.swift in Sources */,
 				7F1225D226741C3F0078CF3D /* SceneDelegate.swift in Sources */,
 				7F12262826745FEC0078CF3D /* WeekForcastTableViewCell.swift in Sources */,
 				7F12261526745CFC0078CF3D /* CurrentForcastView.swift in Sources */,
