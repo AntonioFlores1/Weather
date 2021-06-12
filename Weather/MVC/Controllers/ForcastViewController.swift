@@ -19,6 +19,21 @@ class ForcastViewController: UIViewController {
         navigationController?.navigationBar.topItem?.title = "Weather Forcast"
         weekForcastTableView.delegate = self
         weekForcastTableView.dataSource = self
+        loadWeatherData()
+    }
+    
+    private func loadWeatherData(){
+        ProjectAPIClient.manager.getProjects { (results) in
+            DispatchQueue.main.async {
+                switch results {
+                case let .success(weather):
+                    dump(weather)
+                
+                case let .failure(error):
+                    dump(error)
+                }
+            }
+        }
     }
     
 }
