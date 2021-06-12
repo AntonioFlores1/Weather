@@ -107,6 +107,7 @@
 		7F1225CE26741C3F0078CF3D /* Weather */ = {
 			isa = PBXGroup;
 			children = (
+				7F12263C267472940078CF3D /* Secrets */,
 				7F122603267457760078CF3D /* Supporting Files */,
 				7F122602267457480078CF3D /* MVC */,
 				7F122604267457900078CF3D /* Main Storyboard */,
@@ -218,6 +219,13 @@
 				7F12263326746E150078CF3D /* NetworkManager.swift */,
 			);
 			name = NetworkManager;
+			sourceTree = "<group>";
+		};
+		7F12263C267472940078CF3D /* Secrets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Secrets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
