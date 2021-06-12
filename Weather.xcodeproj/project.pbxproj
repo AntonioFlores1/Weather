@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		7F1225D026741C3F0078CF3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1225CF26741C3F0078CF3D /* AppDelegate.swift */; };
 		7F1225D226741C3F0078CF3D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1225D126741C3F0078CF3D /* SceneDelegate.swift */; };
-		7F1225D426741C3F0078CF3D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1225D326741C3F0078CF3D /* ViewController.swift */; };
+		7F1225D426741C3F0078CF3D /* ForcastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1225D326741C3F0078CF3D /* ForcastViewController.swift */; };
 		7F1225D726741C3F0078CF3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F1225D526741C3F0078CF3D /* Main.storyboard */; };
 		7F1225D926741C420078CF3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F1225D826741C420078CF3D /* Assets.xcassets */; };
 		7F1225DC26741C420078CF3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F1225DA26741C420078CF3D /* LaunchScreen.storyboard */; };
 		7F1225E726741C430078CF3D /* WeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1225E626741C430078CF3D /* WeatherTests.swift */; };
 		7F1225F226741C430078CF3D /* WeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1225F126741C430078CF3D /* WeatherUITests.swift */; };
+		7F12261526745CFC0078CF3D /* CurrentForcastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F12261426745CFC0078CF3D /* CurrentForcastView.swift */; };
+		7F12262826745FEC0078CF3D /* WeekForcastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F12262726745FEC0078CF3D /* WeekForcastTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +40,7 @@
 		7F1225CC26741C3F0078CF3D /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F1225CF26741C3F0078CF3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F1225D126741C3F0078CF3D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7F1225D326741C3F0078CF3D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7F1225D326741C3F0078CF3D /* ForcastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForcastViewController.swift; sourceTree = "<group>"; };
 		7F1225D626741C3F0078CF3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7F1225D826741C420078CF3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F1225DB26741C420078CF3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		7F1225ED26741C430078CF3D /* WeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F1225F126741C430078CF3D /* WeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherUITests.swift; sourceTree = "<group>"; };
 		7F1225F326741C430078CF3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F12261426745CFC0078CF3D /* CurrentForcastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentForcastView.swift; sourceTree = "<group>"; };
+		7F12262726745FEC0078CF3D /* WeekForcastTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekForcastTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +132,8 @@
 		7F122602267457480078CF3D /* MVC */ = {
 			isa = PBXGroup;
 			children = (
+				7F12261326745CC30078CF3D /* Model */,
+				7F12261226745CB20078CF3D /* View */,
 				7F122605267457B00078CF3D /* Controllers */,
 			);
 			path = MVC;
@@ -155,9 +161,41 @@
 		7F122605267457B00078CF3D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				7F1225D326741C3F0078CF3D /* ViewController.swift */,
+				7F1225D326741C3F0078CF3D /* ForcastViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7F12261226745CB20078CF3D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7F12261A26745F6C0078CF3D /* UITableCell */,
+				7F12261926745F630078CF3D /* UIView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7F12261326745CC30078CF3D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		7F12261926745F630078CF3D /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				7F12261426745CFC0078CF3D /* CurrentForcastView.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		7F12261A26745F6C0078CF3D /* UITableCell */ = {
+			isa = PBXGroup;
+			children = (
+				7F12262726745FEC0078CF3D /* WeekForcastTableViewCell.swift */,
+			);
+			path = UITableCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,9 +328,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F1225D426741C3F0078CF3D /* ViewController.swift in Sources */,
+				7F1225D426741C3F0078CF3D /* ForcastViewController.swift in Sources */,
 				7F1225D026741C3F0078CF3D /* AppDelegate.swift in Sources */,
 				7F1225D226741C3F0078CF3D /* SceneDelegate.swift in Sources */,
+				7F12262826745FEC0078CF3D /* WeekForcastTableViewCell.swift in Sources */,
+				7F12261526745CFC0078CF3D /* CurrentForcastView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
